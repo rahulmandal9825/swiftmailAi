@@ -1,9 +1,12 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import LinkAccount from "~/components/LinkAccount";
 
 export default async function Home() {
 
+
   return (
  <>
+      <LinkAccount/>
        <SignedIn>
         {/* Mount the UserButton component */}
         <UserButton />
